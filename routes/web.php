@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,5 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('posts', [UserController::class,'index']);
-Route::get('store/posts', [UserController::class,'store']);
+Route::get('posts', [PostController::class,'index']);
+Route::get('store/posts', [PostController::class,'store']);
